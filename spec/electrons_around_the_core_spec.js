@@ -34,4 +34,28 @@ describe('Electrons around the cores', function() {
 	it('should return 6 if array is [3, 6, 2, 5]', function() {
 		expect(findElectrons.add([3, 6, 2, 5])).toEqual(6);
 	});
+
+	it('should return 12 if array is [3, 5, 3, 5]', function() {
+		expect(findElectrons.add([3, 5, 3, 5])).toEqual(12);
+	});
+
+	it('should return 12 if array is [3, 5, 3, 5]', function() {
+		expect(findElectrons.add([3, 5, 3, 5])).toEqual(12);
+	});
+
+	it('should return 12 if array is [3, 5, 3, 5]', function() {
+		expect(findElectrons.add([3, 5, 3, 5])).toEqual(12);
+	});
+
+	it('should return 6 if array is [3, 6, 1, 2, 5]', function() {
+		expect(findElectrons.add([3, 6, 1, 2, 5])).toEqual(6);
+	});
+
+	it('should return 10 if array is [3, 1, 2, 5, 5, 6]', function() {
+		expect(findElectrons.add([3, 1, 2, 5, 5, 6])).toEqual(10);
+	});
+
+	it('should return "Invalid number in array" if a number is smaller than 1', function() {
+		expect(findElectrons.add([0, 3, 5, 1, 1, 1])).toEqual("Invalid number in array");
+	});
 });
