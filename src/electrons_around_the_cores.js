@@ -7,8 +7,7 @@ electrons_around_the_cores.prototype.add = function(numbers) {
 
 	if (numbers.length < 4) {
 		return "Array too short";
-	}
-	if (numbers.length > 6) {
+	} else if (numbers.length > 6) {
 		return "Array too long";
 	}
 };
