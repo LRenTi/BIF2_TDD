@@ -14,4 +14,8 @@ describe('Electrons around the cores', function() {
 	it('should return "Array too long" for a parameter that is longer than 6', function() {
 		expect(findElectrons.add([5, 3, 5, 1, 4, 5, 6])).toEqual("Array too long");
 	});
+
+	it('should return 0 if array with 1s', function() {
+		expect(findElectrons.add([1, 1, 1, 1])).toEqual(0);
+	});
 });
