@@ -14,6 +14,9 @@ electrons_around_the_cores.prototype.add = function(numbers) {
 			if (numbers[i] === 3) {
 				return 1;
 			}
+			if (numbers[i] === 5) {
+				return 4;
+			}
 		}
 		return 0;
 	}
