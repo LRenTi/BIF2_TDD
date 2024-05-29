@@ -10,6 +10,11 @@ electrons_around_the_cores.prototype.add = function(numbers) {
 	} else if (numbers.length > 6) {
 		return "Array too long";
 	} else {
+		for (var i = 0; i < numbers.length; i++) {
+			if (numbers[i] === 3) {
+				return 1;
+			}
+		}
 		return 0;
 	}
 };
