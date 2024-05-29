@@ -12,6 +12,10 @@ electrons_around_the_cores.prototype.add = function(numbers) {
 	} else {
 		let sum = 0;
 		for (var i = 0; i < numbers.length; i++) {
+			if (numbers[i] < 1) {
+				return "Invalid number in array";
+			}
+
 			if (numbers[i] % 2 != 0) {
 				sum += (numbers[i] - 1);
 			}
