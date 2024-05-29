@@ -58,4 +58,8 @@ describe('Electrons around the cores', function() {
 	it('should return "Invalid number in array" if a number is smaller than 1', function() {
 		expect(findElectrons.add([0, 3, 5, 1, 1, 1])).toEqual("Invalid number in array");
 	});
+
+	it('should return "Invalid number in array" if a number is bigger than 6', function() {
+		expect(findElectrons.add([1, 7, 5, 3])).toEqual("Invalid number in array");
+	});
 });
