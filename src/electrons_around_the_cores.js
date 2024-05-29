@@ -10,14 +10,12 @@ electrons_around_the_cores.prototype.add = function(numbers) {
 	} else if (numbers.length > 6) {
 		return "Array too long";
 	} else {
+		let sum = 0;
 		for (var i = 0; i < numbers.length; i++) {
-			if (numbers[i] === 3) {
-				return 1;
-			}
-			if (numbers[i] === 5) {
-				return 4;
+			if (numbers[i] % 2 != 0) {
+				sum += (numbers[i] - 1);
 			}
 		}
-		return 0;
+		return sum;
 	}
 };
