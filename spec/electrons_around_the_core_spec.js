@@ -23,11 +23,15 @@ describe('Electrons around the cores', function() {
 		expect(findElectrons.add([2, 1, 1, 1])).toEqual(0);
 	});
 
-	it('should return 1 if array with 1s and 4', function() {
+	it('should return 0 if array with 1s and 4', function() {
 		expect(findElectrons.add([1, 1, 4, 1])).toEqual(0);
 	});
 
-	it('should return 1 if array with 1s and 5', function() {
+	it('should return 4 if array with 1s and 5', function() {
 		expect(findElectrons.add([1, 1, 1, 5])).toEqual(4);
+	});
+
+	it('should return 6 if array is [3, 6, 2, 5]', function() {
+		expect(findElectrons.add([3, 6, 2, 5])).toEqual(6);
 	});
 });
